@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+:root{
+    --bg: #0b0b0b;
+}
+body
+{
+   
+    background-color: #0b0b0b;
+}
+.b{
+    color: aliceblue;
+    font-size: 35px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    width: 350px;
+    margin-left: 80px;
+    margin-top: 70px;
+    letter-spacing: 7px;
+    
+}
+.b span{
+    color: #19e220;
+}
+
+button {
+    color: #1D9AF2;
+    background-color: #292D3E;
+    border: 1px solid #1D9AF2;
+    margin-top: 20px;
+    margin-left: 250px;
+    margin-bottom: 50px;
+    border-radius: 10px;
+    padding: 0 15px;
+    cursor: pointer;
+    height: 52px;
+    font-size: 14px;
+    transition: all 0.2s ease-in-out;
+ }
+ button:hover {
+   box-shadow: 1px 1px #53a7ea, 7px 7px #53a7ea, 3px 3px #53a7ea;
+   transform: translateX(-3px);
+ }
+.dunya{
+    position: relative;
+    width: 420px;
+    height: 420px;
+    background-color: aquamarine;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.golge{
+    position: absolute;
+    width: 420px;
+    height: 420px;
+    background:radial-gradient(ellipse at center, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 47%, rgba(0,0,0,1) 74%, rgba(0,0,0,1) 100%);
+    
+}
+.harita{
+    width: 420px;
+    height: 420px;
+    background: url("world1.png");
+    background-size: cover;
+    animation: donus 20s linear 0s infinite;
+}
+@keyframes donus{
+    from{}
+    to{background-position: -1000px 0;}
+}
+
+
+.cube{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    transform-style: preserve-3d;
+    transform: rotateX(-30deg);
+    animation: animate 4s linear infinite;
+}
+@keyframes animate{
+    0%{
+        transform: rotateX(-20deg) rotateY(0deg);
+    }
+    100%{
+        transform: rotateX(-20deg) rotateY(360deg);
+    }
+}
+.cube div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+}
+.cube div span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#151515,#1970e2);
+    transform: rotateY(calc(90deg * var(--i))) translateZ(150px);
+}
+video {
+    width: 500px;
+    height: 550px;
+    
+}
+.a
+{
+    width: 300px;
+    height: 200px;
+}
+a{
+    text-decoration: none;
+}
+.link ul{
+    position: relative;
+    display: flex;
+    gap: 50px;
+    margin-left: 300px;
+    margin-top: 110px;
+    margin-bottom: 150px;
+}
+.link ul li{
+    list-style: none;
+}
+
+.link ul li a{
+    position: relative;
+    display: block;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    background: #333;
+    border-radius: 50%;
+    font-size: 17px;
+    color: #43c4e8;
+    transition: .5s;
+} 
